@@ -66,7 +66,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          p.CRFURL = 'https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_HEIGHT]='+p.height;
+          p.crfurl = 'https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_HEIGHT]='+p.height;
           //9999&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_WEIGHT]=9999&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_SYSTOLIC]=120&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_DIASTOLIC]=80
 
           ret.resolve(p);
@@ -93,7 +93,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
-      CRFURL: {value: ''},
+      crfurl: {value: ''},
     };
   }
 
@@ -159,7 +159,7 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
-    $('#CRFURL').html(p.CRFURL);    
+    $('#crfurl').html(p.crfurl);    
   };
 
 })(window);
