@@ -49,7 +49,7 @@
           console.log('Item: ', height);
           console.log('Item: ', systolicbp);
           console.log('Item: ', diastolicbp);
-          var crfurl = 'https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_HEIGHT]='+height+'&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_SYSTOLIC]='+systolicbp+'&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_DIASTOLIC]='+diastolicbp;
+          var crfurl = 'https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_SYSTOLIC]='+systolicbp+'&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_DIASTOLIC]='+diastolicbp;
 
           var p = defaultPatient();
           p.birthdate = dobStr;
