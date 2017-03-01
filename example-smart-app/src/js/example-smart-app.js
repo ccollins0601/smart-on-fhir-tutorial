@@ -46,7 +46,8 @@
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
-          var crfurl = 'https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_HEIGHT]='+fname.toSource();
+          console.log('Item: ', fname);
+          var crfurl = 'https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_HEIGHT]='+fname;
           
           var p = defaultPatient();
           p.birthdate = dobStr;
