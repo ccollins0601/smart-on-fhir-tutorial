@@ -93,6 +93,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+      CRFURL: {value: ''},
     };
   }
 
@@ -158,6 +159,7 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+    $('#CRFURL').html(p.CRFURL);    
   };
 
 })(window);
