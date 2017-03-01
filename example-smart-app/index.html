@@ -64,15 +64,32 @@
           <th>HDL:</th>
           <td id='hdl'></td>
         </tr>
+      </table>
+      <table style="visibility:hidden;">
         <tr>
-          <th>Complete Case Report Form:</th>
+          <th>Case Report Form URL:</th>
           <td id='crfurl'></td>
         </tr>
       </table>
-      <h2>Complete Case Report Form</h2>
-      <a href="#" onclick="javascript:window.open(document.getElementById('crfurl').innerText);">Physical Exam</a><br><br>
-      <a href="https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_HEIGHT]=9999&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_WEIGHT]=9999&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_SYSTOLIC]=120&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_DIASTOLIC]=80">Physical Exam</a>
-      https://ocform3.mystudy.me/preview/::YYBD?d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_HEIGHT]=9999&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_WEIGHT]=9999&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_SYSTOLIC]=120&d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_DIASTOLIC]=80
+      <h2>Complete Patient Case Report Form(s)</h2>
+        <tr>
+          <th>Physical Exam:</th>
+          <td><a href="#" onclick="javascript:window.open(document.getElementById('crfurl').innerText);">Click Here</a><br><br>
+            </td>
+        </tr>
+      <h2>What's happening</h2>
+      <p>example-smart-app.js has been customized to include a crfurl variable populated with 
+        'https://ocform3.mystudy.me/preview/::YYBD?'. This refers to an OC Participate form in preview mode 
+        on demo1. It then uses some (very cruddy) javascript to append to the URL a few of the variables pulled from the patient
+        record. The GET parameters of the URL are constructed to map to the relevant OCP Form fields using 
+        <a href="https://help.ona.io/faq/prefilling-form-fields-using-enketo">this</a> method. So, when you click the CRF link, 
+        the form opens with the values from the patient's health record pre-populated.
+        
+        <br>
+        https://ocform3.mystudy.me/preview/::YYBD? &lt;== the base form URL<br>
+        d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_SYSTOLIC]=systolicbp &lt;== the systolic bp, where 'systolicbp' is replaced by the code with the actual value<br>
+        &amp;d[/F_PHYSICALEXAM_ENGLISH/IG_PHYSI_UNGROUPED/I_PHYSI_DIASTOLIC]=diastolicbp &lt;== the diastolic bp, where 'diastolicbp' is replaced by the code with the actual value<br>
+        
     </div>
     <script src='./lib/es6-shim-0.35.1.min.js'></script>
     <script src='./src/js/example-smart-app.js'></script>
